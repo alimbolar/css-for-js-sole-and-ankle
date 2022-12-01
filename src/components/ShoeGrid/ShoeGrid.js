@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
 
-import SHOES from '../../data';
-import ShoeCard from '../ShoeCard';
+import SHOES from "../../data";
+import ShoeCard from "../ShoeCard";
 
 const ShoeGrid = () => {
   return (
@@ -14,6 +14,18 @@ const ShoeGrid = () => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1 0 350px;
+  }
+
+  & img {
+    width: 100%;
+  }
+`;
 
 export default ShoeGrid;
